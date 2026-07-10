@@ -257,7 +257,7 @@ header {
 }
 
 .p-card1 button:hover, .p-card3 button:hover{
-    background-color: #cfcfcf;
+    background-color: #dbdbdb;
 }
 
 .p-card1,
@@ -266,7 +266,7 @@ header {
 }
 
 .p-card1 button {
-    color: #2563EB;
+    color: #296dff;
     background-color: transparent;
     border: 2px solid #2563EB;
 }
