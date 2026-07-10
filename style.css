@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Inter";
@@ -6,14 +6,16 @@
 
 /* common classes */
 
-.container{
+.container {
     max-width: 85%;
     margin: auto;
 }
-.grey-text{
+
+.grey-text {
     color: #575757;
 }
-.btn{
+
+.btn {
     color: white;
     background-color: #1D4ED8;
     border: none;
@@ -25,22 +27,25 @@
 
 
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     padding: 26px 0;
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
     align-items: center;
 }
-nav ul a{
+
+nav ul a {
     text-decoration: none;
     color: #575757;
 }
-.nav-btn button{
+
+.nav-btn button {
     font-size: 16px;
     padding: 13px 40px;
 }
@@ -48,8 +53,10 @@ nav ul a{
 
 /* header section */
 
-header{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)90%), url("./assets/banner.jpg");
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)90%),
+        linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)50%),
+        url("./assets/banner.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,20 +67,23 @@ header{
     align-items: center;
     text-align: center;
 }
-.header-content h1{
+
+.header-content h1 {
     font-size: 80px;
     font-weight: bold;
     color: white;
     padding-top: 30px;
     padding-bottom: 20px;
 }
-.header-content p{
+
+.header-content p {
     font-size: 22px;
     opacity: 70%;
     color: white;
     padding-bottom: 300px;
 }
-.header-content button{
+
+.header-content button {
     font-size: 24px;
     padding: 22px 60px;
 }
@@ -81,44 +91,53 @@ header{
 
 /* speaker section */
 
-.speaker{
+.speaker {
     padding-top: 70px;
 }
-.speaker h2{
-    font-size: 52px;
+
+.speaker h2 {
+    font-size: 56px;
     font-weight: bold;
     padding-bottom: 50px;
     text-align: center;
 }
-.cards{
+
+.cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
-.card{
+
+.card {
     border: 1px solid #E5E7EB;
     border-radius: 10px;
     overflow: hidden;
 }
-.card img{
+
+.card img {
     width: 100%;
 }
-.card div{
+
+.card div {
     padding: 25px 22px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-.speaker-sub{
+
+.speaker-sub {
     color: #1D4ED8;
     font-size: 12px;
     font-weight: 600;
 }
-.speaker-name{
+
+.speaker-name {
     font-size: 20px;
     font-weight: bold;
 }
-.speaker-position, .p-card-p{
+
+.speaker-position,
+.p-card-p {
     color: #575757;
     font-size: 14px;
 }
@@ -127,109 +146,226 @@ header{
 /* price section */
 
 
-.price-section{
+.price-section {
     max-width: 75%;
     margin: auto;
 }
-.price-header{
+
+.price-header {
     text-align: center;
     padding-top: 150px;
     display: grid;
     gap: 15px;
     padding-bottom: 40px;
 }
-.price-header h2{
+
+.price-header h2 {
     font-size: 48px;
     font-weight: bold;
 }
-.price-header p{
+
+.price-header p {
     font-size: 16px;
     color: #575757;
 }
-.p-cards{
+
+.p-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 100px;
     gap: 24px;
 }
-.p-card{
+
+.p-card {
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     border-radius: 10px;
 }
-.p-card-head{
+
+.p-card-head {
     display: grid;
     gap: 5px;
 }
-.p-card1 hr, .p-card3 hr{
+
+.p-card1 hr,
+.p-card3 hr {
     opacity: 30%;
 }
-.p-card ul{
+
+.p-card ul {
     padding-left: 15px;
     display: grid;
     gap: 15px;
     font-size: 14px;
 }
-.p-card1 ul, .p-card3 ul{
+
+.p-card1 ul,
+.p-card3 ul {
     color: #333333;
 }
-.p-card ul li::marker{
+
+.p-card ul li::marker {
     color: #2563EB;
 }
-.p-card div .p1{
+
+.p-card div .p1 {
     font-size: 13px;
     color: #888888;
     font-weight: 600;
 }
-.p-card div .p2{
+
+.p-card div .p2 {
     color: #93C5FD;
     font-size: 13px;
     font-weight: 600;
 }
-.p-card div h2{
+
+.p-card div h2 {
     font-size: 44px;
     font-weight: 700;
 
 }
-.p-card button{
+
+.p-card button {
     padding: 15px;
 }
-.p-card1, .p-card3{
+
+.p-card1,
+.p-card3 {
     border: 1px solid #E5E7EB;
 }
-.p-card1 button{
+
+.p-card1 button {
     color: #2563EB;
     background-color: transparent;
     border: 2px solid #2563EB;
 }
-.p-card2{
+
+.p-card2 {
     background-color: #0D1B2A;
 }
-.p-card2 h2{
+
+.p-card2 h2 {
     color: #FFFFFF;
     font-weight: 600;
 }
-.p-card2 hr{
+
+.p-card2 hr {
     opacity: 20%;
 }
-.p-card2 ul li{
+
+.p-card2 ul li {
     color: white;
     font-weight: 300;
     opacity: 80%;
 }
-.p-card2 .p-card-p{
+
+.p-card2 .p-card-p {
     color: #FFFFFF;
     opacity: 50%;
     font-weight: 200;
 }
-.p-card3{
+
+.p-card3 {
     background-color: #F8F9FB;
 }
-.p-card3 button{
+
+.p-card3 button {
     background-color: transparent;
     color: #0D1B2A;
     border: 2px solid #0D1B2A;
 }
 
+
+ /* ---- Section wrapper ---- */
+  .faq-section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+ 
+  .faq-heading {
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+ 
+  /* ---- List spacing ---- */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* same rhythm as the gap between pricing cards */
+  }
+ 
+  /* ---- Each FAQ card ---- */
+  .faq-item {
+    border: 1px solid #e5e7eb; /* same border color as pricing cards */
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 0 20px;
+    transition: border-color 0.2s ease;
+  }
+ 
+  .faq-item[open] {
+    border-color: #2563eb; /* royal blue, only while open */
+  }
+ 
+  /* ---- Question row (the clickable part) ---- */
+  .faq-question {
+    list-style: none; /* removes default triangle marker */
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s ease;
+  }
+ 
+  /* Removes the default marker in Chrome/Safari */
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+ 
+  .faq-question:hover {
+    color: #2563eb; /* royal blue on hover */
+  }
+ 
+  /* ---- Custom plus/minus icon ---- */
+  .faq-question::after {
+    content: "+";
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #2563eb;
+    margin-left: 16px;
+    transition: transform 0.25s ease;
+  }
+ 
+  .faq-item[open] .faq-question::after {
+    content: "+";
+    transform: rotate(45deg); /* turns + into an x/close shape */
+  }
+ 
+  /* ---- Answer content ---- */
+  .faq-answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease, padding-bottom 0.3s ease;
+  }
+ 
+  .faq-item[open] .faq-answer {
+    max-height: 200px; /* must be taller than the tallest answer — see note below */
+    padding-bottom: 20px;
+  }
+ 
+  .faq-answer p {
+    margin: 0;
+    color: #4b5563; /* softer gray for body text */
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
