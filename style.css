@@ -23,6 +23,7 @@
     font-weight: bold;
     text-align: center;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 
 
@@ -45,9 +46,20 @@ nav ul a {
     color: #575757;
 }
 
+nav ul a:hover{
+    color: black;
+}
+
 .nav-btn button {
     font-size: 16px;
     padding: 13px 40px;
+    border: 2px solid transparent;
+}
+
+.nav-btn button:hover{
+    background-color: transparent;
+    border: 2px solid #2563EB;
+    color: #2563EB;
 }
 
 
@@ -86,6 +98,12 @@ header {
 .header-content button {
     font-size: 24px;
     padding: 22px 60px;
+    border: 2px solid transparent;
+}
+.header-content button:hover{
+    background-color: transparent;
+    border: 2px solid #2563EB;
+    color: white;
 }
 
 
@@ -112,6 +130,12 @@ header {
     border: 1px solid #E5E7EB;
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover{
+    opacity: 85%;
+    transform: scale(1.02);
 }
 
 .card img {
@@ -232,6 +256,10 @@ header {
     padding: 15px;
 }
 
+.p-card1 button:hover, .p-card3 button:hover{
+    background-color: #cfcfcf;
+}
+
 .p-card1,
 .p-card3 {
     border: 1px solid #E5E7EB;
@@ -267,6 +295,9 @@ header {
     opacity: 50%;
     font-weight: 200;
 }
+.p-card2 button:hover{
+    background-color: #153a8b;
+}
 
 .p-card3 {
     background-color: #F8F9FB;
@@ -278,44 +309,41 @@ header {
     border: 2px solid #0D1B2A;
 }
 
+/* FAQ section */
 
- /* ---- Section wrapper ---- */
-  .faq-section {
+.faq-section {
     max-width: 700px;
     margin: 0 auto;
     padding: 64px 24px;
-  }
- 
-  .faq-heading {
+}
+
+.faq-heading {
     font-size: 48px;
     font-weight: 800;
     text-align: center;
     margin-bottom: 32px;
-  }
- 
-  /* ---- List spacing ---- */
-  .faq-list {
+}
+
+.faq-list {
     display: flex;
     flex-direction: column;
-    gap: 12px; /* same rhythm as the gap between pricing cards */
-  }
- 
-  /* ---- Each FAQ card ---- */
-  .faq-item {
-    border: 1px solid #e5e7eb; /* same border color as pricing cards */
+    gap: 12px;
+}
+
+.faq-item {
+    border: 1px solid #e5e7eb;
     border-radius: 8px;
     background: #ffffff;
     padding: 0 20px;
     transition: border-color 0.2s ease;
-  }
- 
-  .faq-item[open] {
-    border-color: #2563eb; /* royal blue, only while open */
-  }
- 
-  /* ---- Question row (the clickable part) ---- */
-  .faq-question {
-    list-style: none; /* removes default triangle marker */
+}
+
+.faq-item[open] {
+    border-color: #2563eb;
+}
+
+.faq-question {
+    list-style: none;
     cursor: pointer;
     padding: 18px 0;
     font-size: 1.05rem;
@@ -325,47 +353,93 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: color 0.2s ease;
-  }
- 
-  /* Removes the default marker in Chrome/Safari */
-  .faq-question::-webkit-details-marker {
+}
+
+.faq-question::-webkit-details-marker {
     display: none;
-  }
- 
-  .faq-question:hover {
-    color: #2563eb; /* royal blue on hover */
-  }
- 
-  /* ---- Custom plus/minus icon ---- */
-  .faq-question::after {
+}
+
+.faq-question:hover {
+    color: #2563eb;
+}
+
+.faq-question::after {
     content: "+";
     font-size: 1.4rem;
     font-weight: 400;
     color: #2563eb;
     margin-left: 16px;
     transition: transform 0.25s ease;
-  }
- 
-  .faq-item[open] .faq-question::after {
+}
+
+.faq-item[open] .faq-question::after {
     content: "+";
-    transform: rotate(45deg); /* turns + into an x/close shape */
-  }
- 
-  /* ---- Answer content ---- */
-  .faq-answer {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease, padding-bottom 0.3s ease;
-  }
- 
-  .faq-item[open] .faq-answer {
-    max-height: 200px; /* must be taller than the tallest answer — see note below */
+}
+
+.faq-item[open] .faq-answer {
+    max-height: 200px;
     padding-bottom: 20px;
-  }
- 
-  .faq-answer p {
+}
+
+.faq-answer p {
     margin: 0;
-    color: #4b5563; /* softer gray for body text */
+    color: #4b5563;
     font-size: 0.95rem;
     line-height: 1.6;
-  }
+}
+
+
+/* footer section */
+
+footer{
+    background-color: #0D1B2A;
+}
+.footer-container{
+    padding: 55px 0;
+}
+.f-before-divider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 35px;
+}
+.social-icons{
+    display: flex;
+    gap: 10px;
+}
+.social-icons a img{
+    height: 38px;
+    width: 38px;
+}
+.social-icons a img:hover{
+    opacity: 80%;
+}
+.footer-container hr{
+    opacity: 20%;
+}
+.f-after-divider{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    color: white;
+    opacity: 40%;
+}
+.copyright{
+    display: flex;
+    gap: 20px;
+}
+.copyright a{
+    text-decoration: none;
+    color: white;
+    opacity: 60%;
+}
+.copyright a:hover{
+    opacity: 100%;
+}
