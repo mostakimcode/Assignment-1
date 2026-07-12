@@ -211,6 +211,7 @@ header {
     flex-direction: column;
     gap: 20px;
     border-radius: 10px;
+    transition: 0.5s ease;
 }
 
 .p-card-head {
@@ -259,6 +260,11 @@ header {
 
 .p-card button {
     padding: 15px;
+}
+
+.p-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0.5px 0.5px 8px gray;
 }
 
 .p-card1 button:hover, .p-card3 button:hover{
@@ -346,6 +352,7 @@ header {
 
 .faq-item[open] {
     border-color: #2563eb;
+    box-shadow: 1px 1px 10px gray;
 }
 
 .faq-question {
