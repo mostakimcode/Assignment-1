@@ -1,6 +1,6 @@
 # DevConf 2026
 
-![DevConf 2026 Screenshot](Website UI/Screenshot.png)
+![DevConf 2026 Screenshot](Website-UI/Screenshot.png)
 
 A modern conference landing page built with HTML and CSS as part of my Programming Hero Web Development journey.
 
