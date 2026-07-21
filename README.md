@@ -28,7 +28,3 @@ https://mostakimcode.github.io/Assignment-1/
 - CSS Layout
 - Typography
 - Project Structure
-
-## 🔗 Repository
-
-https://github.com/mostakimcode/Assignment-1
